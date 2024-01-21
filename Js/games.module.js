@@ -1,8 +1,5 @@
 const body = document.querySelector('body')
 const loading = document.querySelector('.loading')
-
-const link = document.querySelectorAll('.nav-link')
-console.log(link);
 const row = document.querySelector('.row');
 //close details
 const detailsSection = document.querySelector('.details')
@@ -26,7 +23,6 @@ export class DisplayGames {
         const getGames = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${this.cate}`, options)
         const result = await getGames.json()
         
-        console.log(result);
         let cartoona = ''
         for (let i = 0; i < result.length; i++) {
             cartoona += `<div class="col-md-6 col-lg-4 col-xl-3 cards">
@@ -101,7 +97,6 @@ export class DisplayGames {
                         body.classList.remove('overflow-hidden')
                     });
                     
-                    console.log(detResult);
                 })()
             })
     
