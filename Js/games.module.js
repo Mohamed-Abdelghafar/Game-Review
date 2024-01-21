@@ -65,7 +65,7 @@ export class DisplayGames {
                     const detResult = await getDetails.json()
                     detailsData.innerHTML = `
                     <div class="container">
-                        <div class="details_header d-flex justify-content-between align-items-center my-5">
+                        <div class="details_header d-flex justify-content-between align-items-center my-3">
                             <h2 class="text-white">Details Game</h2>
                             <div class="closeButton align-middle"><i class="fa-solid fa-xmark fa-2x p-1"></i></div>
                         </div>

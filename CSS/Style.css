@@ -125,6 +125,7 @@ nav h1 img {
 .details {
     z-index: 9999999999;
     background-color: #272B30;
+    overflow: auto;
 }
 .closeButton {
     color: white;
