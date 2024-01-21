@@ -30,7 +30,8 @@ header img {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.219));
     padding: 15px 0;
     position: sticky;
-    top: calc(75.42px / 2) ;
+    margin-top: calc(-68px / 2);
+    top:0;
 }
 nav {
     z-index: 9999;
@@ -90,9 +91,6 @@ nav h1 img {
     .bg-body-tertiary {
         padding: 10px 0;
     }
-    .bg-body-tertiary {
-        top: calc(68px / 2) ;
-    }
 }
 @media screen and (max-width:767px){
     .card-body {
@@ -103,12 +101,11 @@ nav h1 img {
     }
     header img {
         height: 180px;
-    
     }
 }
-@media screen and (max-width:264px){
-    .bg-body-tertiary {
-        top: calc(113.42px / 2) ;
+@media screen and (max-width:500px){
+    header img {
+        height: 130px;
     }
 }
 
